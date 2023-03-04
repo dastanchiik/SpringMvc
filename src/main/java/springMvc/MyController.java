@@ -41,19 +41,20 @@ private final List<Person>people = asList(
     }
     //find by id
 
-//    @GetMapping("/discover/by/{id}")
-//    public String getById(@PathVariable int id,Model model){
-//        try {
-//            Person p = people.get(id);
-//            model.addAttribute("byId",p);
-//            return "byId";
-//        }catch (ArrayIndexOutOfBoundsException e){
-//                model.addAttribute("exception",id);
-//                return "exceptions";
-//        }
-//    }
-//    @GetMapping("/login")
-//    public String login(){
-//        return "name";
-//    }
+    @GetMapping("/yandex")
+    public String example(){
+        return "yandex";
+    }
+
+    @GetMapping("/discover/by/{id}")
+    public String getById(@PathVariable int id,Model model) {
+        try {
+            Person p = people.get(id);
+            model.addAttribute("byId", p);
+            return "byId";
+        } catch (ArrayIndexOutOfBoundsException e) {
+            model.addAttribute("exception", id);
+            return "exceptions";
+        }
+    }
 }

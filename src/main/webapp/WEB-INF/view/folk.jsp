@@ -42,5 +42,6 @@
 
     </tbody>
 </table>
+<a href="/people/welcome">roll-back</a>
 </body>
 </html>

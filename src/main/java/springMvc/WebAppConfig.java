@@ -31,12 +31,6 @@ public class WebAppConfig implements WebMvcConfigurer {
         viewResolver.setSuffix(".jsp");
         return viewResolver;
     }
-//
-//    @GetMapping("/logins")
-//    public String login(){
-//        return "login";
-//    }
-
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
